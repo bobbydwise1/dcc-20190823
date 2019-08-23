@@ -10,29 +10,15 @@ Integers can appear more than once in the list. You may assume all numbers in th
 For example, given S = [12, 1, 61, 5, 9, 2] and k = 24, return [12, 9, 2, 1] since it sums up to 24.
 */
 
-class Flight {
-  constructor(origin=null,destination=null) {
-    this.origin=origin;
-    this.destination=destination;
+const findAddends = (yourArray, sum) => {
+  let working = [];
+  for (i = 0; i<yourArray.length; i++) {
+    if (yourArray[i] < sum) {
+      working.push(yourArray[i])
+    }
   }
+  return working;
 }
-
-const makeRoute = (yourArrayOfObjs) => {
-  let output = [];
-  let temp;
-  for (i = 0; i< yourArrayOfObjs.length; i++) {
-
-
-  }
-}
-
-const leg1 = new Flight('SFO', 'HKO')
-const leg2 = new Flight('YYZ', 'SFO')
-const leg3 = new Flight('YUL', 'YYZ')
-const leg4 = new Flight('HKO', 'ORD')
-const iten1 = [leg1,leg2,leg3,leg4]
-
-
 
 $(document).ready(function() {
   $('#button1').click(function(){
