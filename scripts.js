@@ -17,8 +17,22 @@ const findAddends = (yourArray, sum) => {
       working.push(yourArray[i])
     }
   }
+  working.sort(function(a,b){
+    return b-a;
+  }); // sort descending
+  console.log(descending)
+  for (j = 0; j<working.length; j++) {
+    if (sum - working[i] > 0) {
+      
+    }
+  }
   return working;
 }
+
+let test1 = [12, 1, 61, 5, 9, 2];
+let value1 = 24;
+let output1 = findAddends(test1,value1)
+console.log(output1)
 
 $(document).ready(function() {
   $('#button1').click(function(){
